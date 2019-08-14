@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+body {
+  background: rgb(33, 33, 33);
+}
+
+nav {
+  position: relative;
+  background-color: #333;
+  height: 3rem;
+  border-bottom: 1.2px solid #00ff00;
+}
+
+nav > div {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div ul {
+  display: flex;
+  margin-top: 4px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 14px;
+  letter-spacing: 1.05px;
+  font-weight: 400;
+}
+
+li:first-child {
+  margin-right: 2rem;
+}
+
+li:last-child {
+  margin-left: 2rem;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #00ff00;
+  transition: color 0.8s;
+}
+
+.logo {
+  height: 3rem;
+}
