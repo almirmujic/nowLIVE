@@ -38,10 +38,6 @@ li {
   font-weight: 400;
 }
 
-li:first-child {
-  margin-right: 2rem;
-}
-
 li:last-child {
   margin-left: 2rem;
 }
@@ -71,9 +67,64 @@ li:hover {
 /* Main landing section */
 .main {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 6rem;
+  height: 300px;
+}
+
+.main-flexcontainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+}
+
+.learn-more {
+  all: unset;
+  background-color: #333;
+  border: 3px solid #00ff00;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 30px;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+}
+
+.learn-more:hover {
+  color: #333;
+  cursor: pointer;
+  background-color: #00ff00;
+}
+
+/* Divider */
+.details:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500%;
+  background: #00ff00;
+  transform: skewY(-12deg);
+  z-index: -1;
+}
+
+/* Details */
+.details {
+  position: relative;
+  padding-top: 6rem;
+}
+
+.details h2 {
+  color: #333;
+}
+
+/* Media queries styling for mid to large size screens */
+@media only screen and (min-width: 768px) {
+  .main-title {
+    font-size: 4rem;
+  }
 }
