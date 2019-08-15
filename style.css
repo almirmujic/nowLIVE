@@ -1,3 +1,4 @@
+/* Global styling */
 *,
 *::before,
 *::after {
@@ -11,6 +12,7 @@ body {
   background: rgb(33, 33, 33);
 }
 
+/* Navigation bar */
 nav {
   position: relative;
   background-color: #333;
@@ -19,9 +21,6 @@ nav {
 }
 
 nav > div {
-  max-width: 980px;
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,4 +54,26 @@ li:hover {
 
 .logo {
   height: 3rem;
+}
+
+/* Wrapper for width control */
+.width-center {
+  max-width: 980px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Unique word highlighting */
+.word-highlight {
+  color: #00ff00;
+}
+
+/* Main landing section */
+.main {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.main-title {
+  font-size: 2.2rem;
 }
