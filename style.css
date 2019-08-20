@@ -172,7 +172,7 @@ li:hover {
 .details-grid div {
   text-align: center;
   letter-spacing: 1.1px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .details-grid div::after {
@@ -217,6 +217,118 @@ li:hover {
   max-width: 300px;
   line-height: 26px;
   font-weight: 300;
+}
+
+/* Go up */
+.goUp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #00ff00;
+  background-image: url('imgs/up.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 10px;
+  border: 2px solid #212121;
+  position: fixed;
+  right: 30px;
+  bottom: 25px;
+}
+
+.goUp:hover {
+  cursor: pointer;
+}
+
+/* Goals */
+.goals {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #00ff00;
+  text-align: center;
+}
+
+.goals h2 {
+  color: #212121;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  letter-spacing: 0.6px;
+}
+
+.goals h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+}
+
+.goals p {
+  color: #212121;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
+
+.goals .highlight-you {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 288px));
+  grid-gap: 4%;
+  justify-content: center;
+  align-items: center;
+}
+
+.goals-grid div {
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  background-color: #212121;
+  border-top: 8px solid #07bd07;
+  border-radius: 0 0 15px 15px;
+  padding: 3rem 2rem 4rem 2rem;
+  height: 100%;
+  box-shadow: 0px 5px 20px -5px #333;
+}
+
+.goals-grid:last-child {
+  align-self: center;
+}
+
+/* .goals-grid div::after {
+  content: '';
+  display: block;
+  border-top: 2px solid #fff;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 50%;
+} */
+
+.goal-highlight {
+  font-size: 2rem;
+}
+
+.digit-highlight {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.million-highlight {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #00ff00;
 }
 
 /* Media queries styling for mid to large size screens */
