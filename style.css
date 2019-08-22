@@ -70,6 +70,10 @@ li:hover {
   color: #00ff00;
 }
 
+.dark-word-highlight {
+  color: #212121;
+}
+
 /* Main landing section */
 .main {
   position: relative;
@@ -224,6 +228,7 @@ li:hover {
 
 /* Go up */
 .goUp {
+  z-index: 2;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -351,7 +356,49 @@ li:hover {
   color: #ffffff;
 }
 
+/* Crafting */
+.crafting {
+  position: relative;
+  padding-top: 6rem;
+}
+
+.crafting h2 {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.crafting p {
+  display: inline-block;
+  text-align: right;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  line-height: 42px;
+}
+
+.crafting div p {
+  padding-top: 2rem;
+}
+
+.crafting::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 150%;
+  background: #00ff00;
+  transform: skewY(12deg);
+  z-index: -1;
+}
+
 /* Media queries styling for mid to large size screens */
+@media only screen and (min-width: 405px) {
+  .crafting h2 {
+    font-size: 3.7rem;
+  }
+}
+
 @media only screen and (min-width: 420px) {
   .main-title {
     font-size: 3rem;
@@ -362,6 +409,12 @@ li:hover {
   .details {
     width: 80%;
   }
+  .platforms {
+    padding-bottom: 6rem;
+  }
+  /* .crafting:before {
+    margin-top: 3rem;
+  } */
 }
 
 @media only screen and (min-width: 667px) {
@@ -400,6 +453,10 @@ li:hover {
   .details-grid p {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .crafting h2 {
+    margin-top: 5rem;
   }
 }
 
