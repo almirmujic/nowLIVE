@@ -14,6 +14,9 @@ html {
 body {
   background: #212121;
 }
+a {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
 
 /* Navigation bar */
 nav {
@@ -242,25 +245,25 @@ li:hover {
 /* Goals */
 .goals {
   margin-top: 5rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
   background-color: #00ff00;
   text-align: center;
 }
 
-.goals h2 {
+/* .goals h2 {
   color: #212121;
   line-height: 3rem;
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 3rem;
   letter-spacing: 0.6px;
-}
+} */
 
 .goals h3 {
   color: #fff;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.8px;
 }
@@ -271,14 +274,14 @@ li:hover {
   line-height: 24px;
   letter-spacing: 0.6px;
 }
-
+/* 
 .goals .highlight-you {
   color: #fff;
   font-weight: 600;
   font-size: 2.4rem;
   text-transform: uppercase;
   text-decoration: underline;
-}
+} */
 
 .goals-grid {
   display: grid;
@@ -303,15 +306,6 @@ li:hover {
   align-self: center;
 }
 
-/* .goals-grid div::after {
-  content: '';
-  display: block;
-  border-top: 2px solid #fff;
-  margin: 0 auto;
-  margin-top: 2rem;
-  width: 50%;
-} */
-
 .goal-highlight {
   font-size: 2rem;
 }
@@ -331,6 +325,49 @@ li:hover {
   color: #00ff00;
 }
 
+/* Platforms */
+.platforms {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.platforms h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: 0.8px;
+  line-height: 32px;
+}
+
+.icon-circle {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: #00ff00;
+}
+
+.platforms-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.platforms-grid div {
+  text-align: center;
+  padding: 1rem;
+}
+
+.platforms-grid div span {
+  display: inline-block;
+  padding-top: 1rem;
+  color: #ffffff;
+}
+
 /* Media queries styling for mid to large size screens */
 @media only screen and (min-width: 420px) {
   .main-title {
@@ -341,6 +378,12 @@ li:hover {
   }
   .details {
     width: 80%;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .goals {
+    padding-bottom: 6rem;
   }
 }
 
@@ -374,5 +417,11 @@ li:hover {
   .details-grid p {
     font-size: 16px;
     line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1044px) {
+  .goals {
+    padding-bottom: 3rem;
   }
 }
