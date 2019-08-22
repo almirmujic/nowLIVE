@@ -251,15 +251,6 @@ li:hover {
   text-align: center;
 }
 
-/* .goals h2 {
-  color: #212121;
-  line-height: 3rem;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 3rem;
-  letter-spacing: 0.6px;
-} */
-
 .goals h3 {
   color: #fff;
   font-size: 1.3rem;
@@ -274,14 +265,6 @@ li:hover {
   line-height: 24px;
   letter-spacing: 0.6px;
 }
-/* 
-.goals .highlight-you {
-  color: #fff;
-  font-weight: 600;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  text-decoration: underline;
-} */
 
 .goals-grid {
   display: grid;
