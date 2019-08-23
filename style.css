@@ -258,8 +258,8 @@ li:hover {
 
 .goals h3 {
   color: #fff;
-  font-size: 1.3rem;
-  font-weight: 300;
+  font-size: 1.1rem;
+  font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.8px;
 }
@@ -414,7 +414,7 @@ li:hover {
 .plan {
   padding: 1rem;
   margin: 1rem;
-  background-color: #212121;
+  background: linear-gradient(#212121, #00ff00);
   border: 1px solid #00ff0070;
   border-radius: 15px;
   display: grid;
@@ -445,6 +445,7 @@ li:hover {
 .plan ul {
   display: block;
   padding-left: 1rem;
+  padding-bottom: 2rem;
 }
 
 .plan ul li {
@@ -475,10 +476,7 @@ li:hover {
 
 .subscribe {
   margin: 1rem;
-}
-
-.monthly h3 {
-  text-align: center;
+  border: 3px solid #212121;
 }
 
 /* Media queries styling for mid to large size screens */
@@ -507,10 +505,6 @@ li:hover {
   .platforms {
     padding-bottom: 6rem;
   }
-  /* .crafting:before {
-    margin-top: 3rem;
-  } */
-
   .plan ul {
     padding: 1rem 2rem 2rem 2rem;
   }
