@@ -90,7 +90,7 @@ li:hover {
   font-size: 2.4rem;
 }
 
-.learn-more {
+.btn {
   all: unset;
   z-index: 2;
   display: flex;
@@ -108,7 +108,7 @@ li:hover {
   letter-spacing: 0.7px;
 }
 
-.learn-more:hover {
+.btn:hover {
   color: #333;
   -webkit-text-fill-color: #333;
   cursor: pointer;
@@ -365,7 +365,7 @@ li:hover {
 .crafting h2 {
   text-align: right;
   margin-top: 1rem;
-  font-size: 3rem;
+  font-size: 2.3rem;
   padding-bottom: 3rem;
 }
 
@@ -375,6 +375,7 @@ li:hover {
   font-size: 1.2rem;
   letter-spacing: 1.2px;
   line-height: 42px;
+  color: #026702;
 }
 
 .crafting div p {
@@ -386,13 +387,107 @@ li:hover {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 150%;
+  height: 130%;
   background: #00ff00;
   transform: skewY(12deg);
   z-index: -1;
 }
 
+/* Purchase */
+.purchase {
+  /* background-color: #212121;
+  border: 1px solid #00ff00;
+  max-width: 980px;
+  width: 90%; */
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding-top: 2rem;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.plan {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #212121;
+  border: 1px solid #00ff0070;
+  border-radius: 15px;
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: center;
+  max-width: 380px;
+}
+
+.plan:hover {
+  border: 1px solid #00ff00;
+}
+
+.plan h3 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.plan h3::after {
+  content: '';
+  display: block;
+  border-top: 1px solid #00ff00;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  width: 50%;
+}
+
+.plan ul {
+  display: block;
+  padding-left: 1rem;
+}
+
+.plan ul li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-gap: 2rem;
+  padding-top: 2rem;
+}
+
+.plan ul li:hover {
+  cursor: default;
+  color: #00ff00;
+  transition: color 0.2s;
+}
+
+.plan ul li:last-child {
+  margin: unset;
+}
+
+.plan-logo {
+  max-width: 250px;
+}
+
+.plan span {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.subscribe {
+  margin: 1rem;
+}
+
+.monthly h3 {
+  text-align: center;
+}
+
 /* Media queries styling for mid to large size screens */
+@media only screen and (min-width: 300px) {
+  .crafting h2 {
+    font-size: 3rem;
+  }
+}
+
 @media only screen and (min-width: 405px) {
   .crafting h2 {
     font-size: 3.7rem;
@@ -415,6 +510,10 @@ li:hover {
   /* .crafting:before {
     margin-top: 3rem;
   } */
+
+  .plan ul {
+    padding: 1rem 2rem 2rem 2rem;
+  }
 }
 
 @media only screen and (min-width: 667px) {
@@ -457,6 +556,10 @@ li:hover {
 
   .crafting h2 {
     margin-top: 5rem;
+  }
+
+  .plan-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
