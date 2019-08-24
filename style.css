@@ -407,13 +407,13 @@ li:hover {
 .plan-grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 2rem;
   align-items: center;
   justify-items: center;
 }
 
 .plan {
   padding: 1rem;
-  margin: 1rem;
   background: linear-gradient(#212121, #00ff00);
   border: 1px solid #00ff0070;
   border-radius: 15px;
@@ -457,8 +457,8 @@ li:hover {
 
 .plan ul li:hover {
   cursor: default;
-  color: #00ff00;
-  transition: color 0.2s;
+  color: #fff;
+  transition: none;
 }
 
 .plan ul li:last-child {
@@ -477,6 +477,70 @@ li:hover {
 .subscribe {
   margin: 1rem;
   border: 3px solid #212121;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 7rem;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e6e6e61f;
+}
+
+.upper-footer {
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1.1px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-footer a {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.upper-footer a:hover {
+  opacity: 1;
+}
+
+.register,
+.more,
+.resources {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.register div,
+.more div,
+.resources div {
+  margin-top: 1.3rem;
+  font-size: 14px;
+}
+
+.footer-logo {
+  height: 60px;
+}
+
+.lower-footer {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lower-footer span {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
 }
 
 /* Media queries styling for mid to large size screens */
@@ -513,6 +577,24 @@ li:hover {
 @media only screen and (min-width: 667px) {
   .goals {
     padding-bottom: 6rem;
+  }
+  .upper-footer {
+    flex-direction: row;
+    max-width: 980px;
+  }
+  .footer-logo-container,
+  .register,
+  .more,
+  .resources {
+    width: 25%;
+  }
+  .register,
+  .more,
+  .resources {
+    margin-top: 1.2rem;
+  }
+  .lower-footer span {
+    margin: 0;
   }
 }
 
