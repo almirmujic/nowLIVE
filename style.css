@@ -636,9 +636,13 @@ footer::before {
   .sponsors-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* Details */
   .details {
     width: 80%;
   }
+
+  /* Platforms */
   .platforms {
     padding-bottom: 6rem;
   }
@@ -672,7 +676,7 @@ footer::before {
     margin: 0;
   }
 
-  /* Responsive Burger / Menu */
+  /* Responsive Burger + Menu */
   .burger {
     display: none;
   }
@@ -692,6 +696,7 @@ footer::before {
   .main-title {
     font-size: 4rem;
   }
+
   /* Sponsors */
   .sponsors-grid img {
     padding: 1rem;
