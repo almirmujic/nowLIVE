@@ -114,6 +114,7 @@ li:hover {
 }
 
 .burger {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);  
   width: 35px;
   height: 35px;
   background-image: url('imgs/menuIcon.svg');
